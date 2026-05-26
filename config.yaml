@@ -1,0 +1,24 @@
+project:
+  name: accessibility_project
+  countries: GEO, UKR
+
+paths:
+  data: data
+  outputs: outputs
+  osm_data: "C:/Users/Equipo/Documents/ss_ML_local/amenity-filtering-github/data/georgia-260518.osm.pbf"
+  osm_folder: "C:/Users/Equipo/Documents/ss_ML_local/amenity-filtering-github/data"
+  border_output: "C:/Users/Equipo/Documents/ss_ML_local/amenity-filtering-github/outputs/national_borders.gpkg"
+
+origin:
+  lat: 41.7821319987
+  lon: 41.7627429997
+
+isochrones:
+  mode: CAR
+  cutoffs: [15, 30, 60, 120]
+  departure_datetime: "2024-05-20 16:00:00"
+  time_window: 30
+  max_trip_duration: 120
+
+r:
+  rscript_path: "C:/Program Files/R/R-4.6.0/bin/Rscript.exe"
