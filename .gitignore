@@ -216,3 +216,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# OSM data
+*.pbf
+*.gpkg
+*.osm
+
+# Python
+__pycache__/
+*.pyc
+
+# Environments
+.env/
+.conda/
