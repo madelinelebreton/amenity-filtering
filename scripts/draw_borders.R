@@ -17,7 +17,7 @@ list_of_countries <- lapply(country_codes, function(code) {
 National_borders <- do.call(rbind, list_of_countries)
 National_borders <- st_make_valid(National_borders)
 
-# 🔥 CRITICAL FIX: ensure output directory exists
+# ensure output directory exists
 out_file <- file.path(config$paths$outputs, "national_borders.gpkg")
 dir.create(dirname(out_file), recursive = TRUE, showWarnings = FALSE)
 
